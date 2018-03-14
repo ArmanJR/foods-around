@@ -1,0 +1,25 @@
+<html>
+<body>
+<div class="container">
+
+<h1>Foods around <strong> سازمان برنامه</strong></h1>
+<br>
+<div class="row" style="margin: 0 auto;">
+<% @foods.each do |m| %>
+<div class="col ">
+
+	<div class="card" style="width:300px;  margin:15px;">
+    <img class="card-img-top" src="<%= m[:image] %>" alt="Card image" style="height:157px;">
+    <div class="card-body">
+      <h5 class="card-title font-weight-bold float-right"><%= m[:title] %></h5>
+      <p class="card-text"><h2><%= m[:price]/1000 %></h2><h6 class="text-center"><a href="<%= m[:rest_link] %>"><%= m[:rest_title] %> </a></h6>		
+		</p>
+    </div>
+  </div>
+</div>
+<% end %>
+
+</div>
+</div>
+</body>
+</html>
