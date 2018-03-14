@@ -1,24 +1,5 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Foods-Around is a private project just for fun :)
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Using Ruby on Rails and Nokogiri, I crawl into online food ordering websites and fetch their restaurants' menus based on my location and also order them by their price so I can find the most efficient foods and decide what to eat!
