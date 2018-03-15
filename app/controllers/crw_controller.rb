@@ -37,6 +37,7 @@ class CrwController < ApplicationController
 			end
 		end
 		@foods.sort_by! { |h| h[:price] }
+		@paginatable_array = Kaminari.paginate_array(@foods).page(params[:page]).per(21)
 	end
 
 end
