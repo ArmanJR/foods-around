@@ -1,5 +1,6 @@
 <div class="container">
-<h1>Foods around <strong> سازمان برنامه</strong></h1>
+<h1>Foods around <strong> <%= @given_location %></strong></h1>
+<h4>Ordering by price</h4>
 <br>
 <div class="row" style="margin: 0 auto;">
 <% @paginatable_array.each do |m| %>
@@ -17,10 +18,7 @@
 </div>
 <br>
 <div class="row">
-	<div class="col-md-12 text-center">
-		<%= link_to_prev_page @paginatable_array, 'Previous Page', class: "btn btn-primary" %>
-		&nbsp;
-		<%= link_to_next_page @paginatable_array, 'Next Page', class: "btn btn-primary" %>
+	<div class="col-md-12">
+	<%= paginate @paginatable_array %>
 	</div>
-</div>
 </div>

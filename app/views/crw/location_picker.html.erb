@@ -1,0 +1,14 @@
+<div class="container" dir="rtl">
+	<div class="col-md-12">
+		<h1>Select your location</h1>
+	</div>
+		<% @sliced_array.each do |hash| %>
+		<div class="row">
+			<% hash.each do |title,link| %>
+				<div class="col-md-3 bigger-size">
+				<a href="<%= link %>" class="text-muted"><%= title %></a>
+				</div>
+			<% end %>
+		</div>
+		<% end %>
+</div>
